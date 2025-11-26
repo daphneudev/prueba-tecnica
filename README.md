@@ -1,7 +1,3 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
 First, run the development server:
 
 ```bash
@@ -13,24 +9,24 @@ pnpm dev
 # or
 bun dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*************************************
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Se puede hacer login con cualquiera de estos correos registrados, acepta cualquier contraseña (por convención de reqres):
 
-## Learn More
+george.bluth@reqres.in — único usuario con rol de administrador
 
-To learn more about Next.js, take a look at the following resources:
+janet.weaver@reqres.in
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+emma.wong@reqres.in
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+eve.holt@reqres.in
 
-## Deploy on Vercel
+Cualquier otro correo no registrado en reqres no permitirá iniciar sesión.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Por defecto, la página entra a /posts, la cual muestra todas las publicaciones registradas. El administrador es el único que puede ver el botón para editar los posts. Todos los usuarios pueden agregar publicaciones.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Al dar click en Usuarios (/users) se mostrarán todos los usuarios registrados y también se pueden ver las publicaciones especificas de cada uno.
+
+Al dar click en cualquier publicación, se mostrarán sus comentarios.
